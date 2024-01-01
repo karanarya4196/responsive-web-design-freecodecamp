@@ -9,10 +9,10 @@
       <h1 id ="title">Karan's YouTube Survey Form</h1>
       <p id="description">Thank you for taking the time to help improve my channel</p>
       <form id="survey-form">
-        <label for="name-label">Name <input id="name" type="text" required placeholder="Enter your name"/></label>
-        <label for="email-label" class="pad">Email <input id="email" type="email" required placeholder="Enter your email address"/></label>
-        <label for="number-label" class="pad">Age <input id="number" type="number" min="10" max="99" required placeholder="Enter your age"/></label>
-        <label for="dropdown" class="pad">Describe your persona:
+        <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label" class="pad">Email <input id="email" type="email" required placeholder="Enter your email address"/></label>
+        <label id="number-label" class="pad">Age <input id="number" type="number" min="10" max="99" required placeholder="Enter your age"/></label>
+        <label id="dropdown-label" class="pad">Describe your persona:
           <select id="dropdown">
             <option value="">Choose any one</option>
             <option value="1">Student</option>
@@ -21,17 +21,17 @@
             <option value="4">Other</option>
           </select>
         </label>
-        <label for="referral" class="pad">Would you recommend Karan's YouTube channel to a friend? </label>
-          <label><input id="referral" type="radio" name="referral-options" checked required class="inline"/>Yes</label>
-        <label for="referral"><input id="referral" type="radio" name="referral-options" required class="inline"/>No</label>
-        <label for="referral"><input id="referral" type="radio" name="referral-options" required class="inline"/>Not Sure</label>
+        <label id="referral" class="pad">Would you recommend Karan's YouTube channel to a friend? </label>
+          <label><input id="referral" type="radio" name="referral-options" value="yes" checked required class="inline"/>Yes</label>
+        <label id="referral"><input id="referral" type="radio" name="referral-options" value="no" required class="inline"/>No</label>
+        <label id="referral"><input id="referral" type="radio" name="referral-options" value="not-sure" required class="inline"/>Not Sure</label>
         <label class="pad">What would you like me to improve? (Check all that apply) </label>
-        <label for="front-end"><input type="checkbox" value="front end" id="front-end" class="inline"/>Front end development practice</label>
-        <label for="api"><input type="checkbox" value="api" id="api" class="inline"/>API practice</label>
-        <label for="dsa"><input type="checkbox" value="dsa" id="front-end" class="inline"/>Data Structures and Algorithms</label>
-        <label for="python"><input type="checkbox" value="python" id="python" class="inline"/>Python programming</label>
-        <label for="comments" class="pad">Drop in your feedback<textarea id="comments" rows="3" cols="30" placeholder="Enter your comments here...."></textarea></label>
-        <label><input type="submit" value="Submit"/></label>
+        <label id="front-end"><input type="checkbox" value="front end" id="front-end" class="inline"/>Front end development practice</label>
+        <label id="api"><input type="checkbox" value="api" id="api" class="inline"/>API practice</label>
+        <label id="dsa"><input type="checkbox" value="dsa" id="front-end" class="inline"/>Data Structures and Algorithms</label>
+        <label id="python"><input type="checkbox" value="python" id="python" class="inline"/>Python programming</label>
+        <label id="comments" class="pad">Drop in your feedback<textarea id="comments" rows="3" cols="30" placeholder="Enter your comments here...."></textarea></label>
+        <label><input id="submit" type="submit"/></label>
       </form>
   </body>
 </html>
